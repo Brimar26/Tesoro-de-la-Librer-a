@@ -14,6 +14,13 @@
         .btn-juego { padding: 15px 30px; font-size: 1.2em; cursor: pointer; border-radius: 10px; border: none; background: var(--verde); color: white; margin: 10px; }
         #mensaje { font-size: 1.3em; margin: 20px 0; height: 60px; }
         .oculto { display: none; }
+       /* IMPORTANTE: Ajuste para móviles */
+@media (max-width: 768px) {
+    .sidebar { width: 100%; height: auto; position: relative; } /* El menú se vuelve una barra superior */
+    .main { margin-left: 0; width: 100%; } /* El contenido ocupa todo el ancho */
+    .grid { grid-template-columns: repeat(2, 1fr); } /* Módulos de 2 en 2 en móviles */
+}
+
     </style>
 </head>
 <body>
